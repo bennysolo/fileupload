@@ -19,6 +19,6 @@ ger = JSON.parse(JSON.stringify(ben).replace('quotedM','m')).message.extendedTex
 reply(mess.wait)
 owgi = await benny.downloadAndSaveMediaMessage(ger)
 anu = await uploadFile(owgi)
-console.log(anu.result].url)
+console.log(anu.result.url)
 reply(anu.result.url)
 break
