@@ -1,4 +1,9 @@
+/**
+Thanks To MRHRTZ
+For make the example
+*/
 const uploadFile = (path) => new Promise((resolve, reject) => {
+     const {default: Axios} = require('axios')
      const FormData = require('form-data')
      const fd = new FormData()
      fd.append('sampleFile', fs.createReadStream(path))
@@ -22,3 +27,8 @@ anu = await uploadFile(owgi)
 console.log(anu.result.url)
 reply(anu.result.url)
 break
+
+/**
+Thanks To MRHRTZ
+For make the example
+*/
