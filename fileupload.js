@@ -9,7 +9,7 @@ const uploadFile = (path) => new Promise((resolve, reject) => {
      fd.append('sampleFile', fs.createReadStream(path))
      Axios({
           method: 'POST',
-          url: 'https://api-self.herokuapp.com/upload2',
+          url: 'https://pecundang.herokuapp.com/upload2',
           data: fd,
           headers: {
                'user-agent': 'MRHRTZ-ZONE :D',
